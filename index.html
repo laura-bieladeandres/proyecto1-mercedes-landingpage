@@ -7,46 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
+
 <body>
+
+  <!-------- HEADER -------->
   <header class="header">
     <nav class="nav">
-      <a href="/" class="logo">Mercedes</a>
+      <a href="/" class="logo">
+        <img src="/resources/icono.png" alt="Mercedes logo">
+      </a>
+
       <ul class="menu">
         <li><a href="https://www.mercedes-benz.es/passengercars/models/electric.html?group=all&subgroup=see-all&filters=ELECTRIC" target="_blank" rel="noopener noreferrer">Electric</a></li>
         <li><a href="https://www.mercedes-benz.es/passengercars/models.html?group=maybach&subgroup=see-all&filters=" target="_blank" rel="noopener noreferrer">Maybach</a></li>
         <li><a href="https://www.mercedes-benz.es/passengercars/buy/digital-extras-overview.html" target="_blank" rel="noopener noreferrer">Accessories</a></li>
         <li><a href="https://www.mercedes-benz.es/passengercars/brand/locations.html" target="_blank" rel="noopener noreferrer">Stores</a></li>
       </ul>
-      <div class="user-actions">
-        <img src="/resources/account.png" alt="account icon">
-        <img src="/resources/cart.png" alt="cart icon">
+
+      <div class="nav-actions">
+        <div class="user-actions">
+          <img src="/resources/account.png" alt="account icon">
+          <img src="/resources/cart.png" alt="cart icon">
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Abrir menú">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
       </div>
     </nav>
   </header>
 
   <main id="main">
 
+    <!-------- HERO -------->
     <section class="hero">
       <div class="hero-content">
-        <span class="hero-subtitle">New Mercedes CLS</span>
-        <h1 class="hero-title">The power in your hands</h1>
+        <h1 class="hero-title">New Mercedes CLS</h1>
+        <h2 class="hero-subtitle">The power in your hands</h2>
       </div>
     </section>
 
+    <!-------- CARDS -------->
     <section class="cards-section">
-      <div class="card-row">
+
+      <div class="card-row row-1">
         <div class="card">
           <div class="card-header">
-            <span class="card-type electric">Electric</span>
+            <span class="card-type">Electric</span>
             <span class="card-model">Merces E450 Cabriolet</span>
           </div>
-          <img class="card-img" src="resources/card1.png" alt="Merces E450 Cabriolet">
+          <div class="card-img-wrap">
+            <img class="card-img" src="resources/card1.png" alt="Merces E450 Cabriolet">
+          </div>
           <div class="card-footer">
-            <button onclick="window.open("-">More info</button>
+            <button onclick="window.open('https://www.mercedes-benz.es/passengercars/models/electric.html','_blank')">More info</button>
             <div class="color-swatches">
-              <span class="swatch gray"></span>
+              <span class="swatch gray active"></span>
               <span class="swatch red"></span>
               <span class="swatch blue"></span>
               <span class="swatch black"></span>
@@ -56,32 +72,35 @@
 
         <div class="card">
           <div class="card-header">
-            <span class="card-type electric">Hybrid</span>
+            <span class="card-type">Hybrid</span>
             <span class="card-model">Merces GLC SUV</span>
           </div>
-          <img class="card-img" src="resources/card2.png" alt="Merces GLC SUV">
+          <div class="card-img-wrap">
+            <img class="card-img" src="resources/card2.png" alt="Merces GLC SUV">
+          </div>
           <div class="card-footer">
-            <button onclick="window.open('-')">More info</button>
+            <button onclick="window.open('https://www.mercedes-benz.es/passengercars/models/hybrid.html','_blank')">More info</button>
             <div class="color-swatches">
-              <span class="swatch black"></span>
+              <span class="swatch black active"></span>
               <span class="swatch gold"></span>
               <span class="swatch darkred"></span>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card-row">
+      <div class="card-row row-2">
         <div class="card">
           <div class="card-header">
-            <span class="card-type hybrid">Hybrid</span>
+            <span class="card-type">Hybrid</span>
             <span class="card-model">Merces Benz-G-Class</span>
           </div>
-          <img class="card-img" src="resources/card3.png" alt="Merces Benz-G-Class">
+          <div class="card-img-wrap">
+            <img class="card-img" src="resources/card3.png" alt="Merces Benz-G-Class">
+          </div>
           <div class="card-footer">
-            <button onclick="window.open('-')">More info</button>
+            <button onclick="window.open('https://www.mercedes-benz.es/passengercars/models/hybrid.html','_blank')">More info</button>
             <div class="color-swatches">
-              <span class="swatch black"></span>
+              <span class="swatch black active"></span>
               <span class="swatch blue"></span>
               <span class="swatch wine"></span>
             </div>
@@ -90,14 +109,16 @@
 
         <div class="card">
           <div class="card-header">
-            <span class="card-type hybrid">Hybrid</span>
+            <span class="card-type">Electric</span>
             <span class="card-model">Merces GLC SUV</span>
           </div>
-          <img class="card-img" src="resources/card4.png" alt="Merces GLC SUV">
+          <div class="card-img-wrap">
+            <img class="card-img" src="resources/card4.png" alt="Merces GLC SUV">
+          </div>
           <div class="card-footer">
-            <button onclick="window.open('-')">More info</button>
+            <button onclick="window.open('https://www.mercedes-benz.es/passengercars/models/electric.html','_blank')">More info</button>
             <div class="color-swatches">
-              <span class="swatch black"></span>
+              <span class="swatch black active"></span>
               <span class="swatch gold"></span>
               <span class="swatch darkred"></span>
             </div>
@@ -106,6 +127,7 @@
       </div>
     </section>
 
+    <!-------- DEALER -------->
     <section class="dealer-section">
       <div class="dealer-overlay">
         <h2>Find your nearest Mercedes dealer you.</h2>
@@ -113,8 +135,10 @@
       </div>
     </section>
 
+    <!-------- DISCOVER -------->
     <section class="discover-section">
       <img src="resources/discover.png" alt="Discover your local Mercedes partner store" class="discover-bg">
+
       <div class="discover-overlay">
         <h2>Discover your local Mercedes partner store</h2>
         <a href="https://www.mercedes-benz.es/passengercars/brand/locations.html" target="_blank" rel="noopener noreferrer" class="discover-btn">
@@ -123,71 +147,82 @@
       </div>
     </section>
 
+    <!-------- FEATURES -------->
     <section class="features-section">
+
       <div class="features-scroll">
+
         <div class="feature-card">
           <h3>Confort</h3>
           <img class="feature-img" src="/resources/confort.jpg" alt="Mercedes interior comfort">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="confort-btn">
-            More info
-          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="feature-btn">More info</a>
         </div>
+
         <div class="feature-card">
           <h3>Technology</h3>
           <img class="feature-img" src="/resources/technology.png" alt="Mercedes advanced technology">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="technology-btn">
-            More info
-          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="feature-btn">More info</a>
         </div>
+
         <div class="feature-card">
           <h3>Accessories</h3>
           <img class="feature-img" src="/resources/accesories.jpg" alt="Mercedes accessories">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="accesories-btn">
-            More info
-          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="feature-btn">More info</a>
         </div>
+
       </div>
+
     </section>
 
+    <!-------- AWARD -------->
     <section class="award-section">
+      <img src="/resources/red-maybach.png" alt="Mercedes Maybach" class="award-img">
+
       <div class="award-content">
         <h2>Red as temptation</h2>
         <p>Good design is what drives us, and we're proud to share that Mercedes-Maybach has already won the prestigious Best Design Award 2023, as judged by the world's best product designers.</p>
       </div>
     </section>
 
+    <!-------- WHEELS -------->
     <section class="wheels-section">
+
       <div class="wheels-content">
         <h3>The Mercedes-Maybach wheel programme</h3>
+        <img class="wheels-img" src="resources/wheel.png" alt="Mercedes-Maybach forged wheels programme">
         <p class="wheels-text">The exclusive Mercedes-Maybach wheel programme, e.g. with optional 53.3 cm (21") Maybach forged wheels in multi-spoke design.</p>
         <a href="https://www.mercedes-benz.es/passengercars/models/cabriolet-roadster/mercedes-maybach-sl/overview.html#exterior" target="_blank" rel="noopener noreferrer" class="learn-more">Learn more</a>
       </div>
-      <img class="wheels-img" src="resources/wheel.png" alt="Mercedes-Maybach forged wheels programme">
+
     </section>
+
   </main>
 
+  <!-------- CTA-BAND -------->
   <section class="cta-band">
     <p>Ready to own the car of your dreams? Mercedes-Maybach are now available at our dealers by appointment only.</p>
     <a href="#" class="contact-btn">CONTACT NOW</a>
   </section>
 
+  <!-------- FOOTER -------->
   <footer class="footer">
+
     <div class="newsletter">
       <h4>Join the power.</h4>
       <p>Sign up for our newsletter.</p>
-  
+
       <form>
         <input id="newsletter-email" type="email" placeholder="Enter your email address here" required>
         <button type="submit">Subscribe</button>
       </form>
-  
+
       <div class="newsletter-consent">
         <input type="checkbox" id="newsletter-consent">
         <label for="newsletter-consent">
           By signing up, I agree to the <a href="#">privacy policy</a> of Veloretti.
         </label>
       </div>
-  
+
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -196,7 +231,7 @@
         <a href="#"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
-  
+
     <div class="footer-links">
       <div>
         <h5>Explorer</h5>
@@ -211,7 +246,7 @@
           <li><a href="#">Size guide</a></li>
         </ul>
       </div>
-  
+
       <div>
         <h5>About</h5>
         <ul>
@@ -222,7 +257,7 @@
           <li><a href="#">Jobs</a></li>
         </ul>
       </div>
-  
+
       <div>
         <h5>Help</h5>
         <ul>
@@ -237,8 +272,9 @@
       </div>
     </div>
   </footer>
-  
+
   <div class="scroll-arrow">↑</div>
-  
+
 </body>
 </html>
+
